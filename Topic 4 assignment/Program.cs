@@ -1,4 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.CodeAnalysis;
 using System.Xml.Schema;
 
 namespace Topic_4_assignment
@@ -8,32 +8,43 @@ namespace Topic_4_assignment
         static void Main(string[] args)
         {
             string name;
+            int age;
+            int salary;
+            int age5;
+            string last_name;
+            string grade;
+            int student_id;
+            string loginname;
+            int gradeav;
+            int num1;
+            int num2;
+            int num3;
+            int ans;
+            string item1;
+            int price1;
+            string item2;
+            int price2;
+            double totalprice1;
+            double finalprice2;
+            double finalprice;
             Console.WriteLine("Hello, what is your name?");
             name = Console.ReadLine();
-            Console.WriteLine("Hello " + name);
-            int age;
+            Console.WriteLine("Hello " + name);          
             Console.WriteLine("what is your age");
-            age = Convert.ToInt32(Console.ReadLine());
-            int salary;
-            Console.WriteLine(age + " huh? wow you sure are ancient history, how much do you make a year grandpa?");
-            int age5;
+            age = Convert.ToInt32(Console.ReadLine());          
+            Console.WriteLine(age + " huh? wow you sure are ancient history, how much do you make a year grandpa?");           
             age5 = age + 5;
             Console.WriteLine("In 5 years youll be " + age5);
             salary = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(salary + " wow I hope thats per hour and not per year!");
-            string last_name;
             Console.WriteLine("what is your last name?");
-            last_name = Console.ReadLine();
-            string grade;
+            last_name = Console.ReadLine();           
             Console.WriteLine("what grade are you in?");
-            grade = Console.ReadLine();
-            int student_id;
+            grade = Console.ReadLine();            
             Console.WriteLine("what is your student id?");
-            student_id = Convert.ToInt32(Console.ReadLine());
-            string loginname;
+            student_id = Convert.ToInt32(Console.ReadLine());            
             Console.WriteLine("what is your login name?");
-            loginname = Console.ReadLine();
-            int gradeav;
+            loginname = Console.ReadLine();            
             Console.WriteLine("what is your  grade average");
             gradeav = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
@@ -44,40 +55,33 @@ namespace Topic_4_assignment
             Console.WriteLine(     loginname);
             Console.WriteLine(     gradeav);
             Console.WriteLine();
-            Console.WriteLine();
-            int num1;
-            int num2;
-            int num3;
+            Console.WriteLine();       
             Console.WriteLine("Dumb calculator: write 3 numbers");
             num1 = Convert.ToInt32(Console.ReadLine());
             num2 = Convert.ToInt32(Console.ReadLine());
-            num3 = Convert.ToInt32(Console.ReadLine());
-            int ans;
+            num3 = Convert.ToInt32(Console.ReadLine());         
             ans = num1 + num2 + num3;
             Console.WriteLine(ans / 2);
             Console.WriteLine();
-            Console.WriteLine();
-            string item1;
+            Console.WriteLine();         
             Console.WriteLine("Give me the name of 1 item at a store");
-            item1 = Console.ReadLine();
-            int price1;
+            item1 = Console.ReadLine();           
             Console.WriteLine("how much does it cost");
-            price1 = Convert.ToInt32(Console.ReadLine());
-            string item2;
+            price1 = Convert.ToInt32(Console.ReadLine());           
             Console.WriteLine("give me the name of another item");
-            item2 = Console.ReadLine();
-            int price2;
+            item2 = Console.ReadLine();           
             Console.WriteLine("how much does it cost?");
             price2 = Convert.ToInt32(Console.ReadLine());
-            double totalprice1;
-            totalprice1 = ((price1 + price2)*0.20);
-            double finalprice;
+            totalprice1 = (price1 + price2);
+            finalprice2 = ((price1 + price2) * 0.20);
             finalprice = totalprice1 * 0.13;
-
-            
-            
-
-
-        }
-    }
-}
+            Console.WriteLine("item name: " + item1);
+            Console.WriteLine("Item price: " + price1);
+            Console.WriteLine("Item name: " + item2);
+            Console.WriteLine("item price: " + price2);
+            Console.WriteLine("total price:" + totalprice1);
+            Console.WriteLine("Discount: 20%");
+            Console.WriteLine("subtotal: " + finalprice2);
+            Console.WriteLine("Tax: = 0.13");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine("final price: " + finalprice);
